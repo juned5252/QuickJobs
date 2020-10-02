@@ -1,4 +1,7 @@
 package com.Team4.example.QuickJobs.Repository;
 
-public interface JobRepository {
+import com.Team4.example.QuickJobs.Entity.Job;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface JobRepository extends JpaRepository<Job,Long> {
 }
