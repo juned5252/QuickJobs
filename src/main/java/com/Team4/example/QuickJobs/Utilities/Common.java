@@ -1,7 +1,9 @@
 package com.Team4.example.QuickJobs.Utilities;
 
+
 import com.Team4.example.QuickJobs.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+
 
 public class Common {
 
