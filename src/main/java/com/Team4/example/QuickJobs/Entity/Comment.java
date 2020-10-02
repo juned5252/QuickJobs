@@ -9,9 +9,9 @@ import javax.persistence.Table;
 @Table(name="Comment")
 public class Comment {
     @Id
-    int commentId;
-    String Description;
-    String Date;
+    private int commentId;
+    private String Description;
+    private String Date;
 
     public Comment() {
     }
