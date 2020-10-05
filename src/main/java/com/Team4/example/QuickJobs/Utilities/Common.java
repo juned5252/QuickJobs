@@ -10,7 +10,7 @@ public class Common {
     @Autowired
     private UserRepository userRepository;
 
-    public double calculateRating(Long Id,double rating){
+    public double calculateRating(Long Id, double rating){
         double currentRating = userRepository.findById(Id).get().getRating();
         int jobsCompleted = userRepository.findById(Id).get().getJobsCompleted();
         double newRating;
