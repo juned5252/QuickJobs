@@ -1,7 +1,9 @@
 package com.Team4.example.QuickJobs.Service;
 
 import com.Team4.example.QuickJobs.Entity.Comment;
+import com.Team4.example.QuickJobs.Entity.User;
 import com.Team4.example.QuickJobs.Repository.CommentRepository;
+import com.Team4.example.QuickJobs.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,25 +15,39 @@ public class CommentService {
     @Autowired
     public CommentRepository commentRepository;
 
+    @Autowired
+    public UserRepository userRepository;
+
     public List<Comment> retrieveAllComments(){
-        List<Comment> listOfComments = (List<Comment>) commentRepository.findAll();
+        List<Comment> listOfComments = commentRepository.findAll();
 
         return listOfComments;
     }
 
-    public void createComment(Comment comment){
-        commentRepository.save(comment);
+    public String createComment(Long id, Long commentorId, Comment comment){
+        Comment userComment = comment;
+
+        userComment.setFirstName(userRepository.findById(commentorId).orElse(null).getFirstName());
+        userComment.setLastName(userRepository.findById(commentorId).orElse(null).getLastName());
+        userComment.setCommentorId(userRepository.findById(commentorId).orElse(null).getUserId());
+
+        User commentReceiver = userRepository.findById(id).orElse(null);
+        commentReceiver.getCommentList().add(userComment);
+        userRepository.save(commentReceiver);
+        return userComment.toString();
     }
 
-    public Optional<Comment> findCommentById(Integer id){
-        return commentRepository.findById(id);
+    public Comment findCommentById(Long id){
+        return commentRepository.findById(id).orElse(null);
     }
 
-    public Comment updateComment(Comment comment, Integer commentId){
-        return commentRepository.save(comment);
+    public Comment updateComment(Comment comment, Long commentId){
+        Comment currentComment = commentRepository.findById(commentId).orElse(null);
+        currentComment.setDescription(comment.getDescription());
+        return commentRepository.save(currentComment);
     }
 
-    public void deleteComment(Integer commentId){
+    public void deleteComment(Long commentId){
         commentRepository.deleteById(commentId);
     }
 }

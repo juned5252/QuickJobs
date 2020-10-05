@@ -32,7 +32,7 @@ public class UserService {
         currentUser.setLastName(user.getLastName());
         currentUser.setLocation(user.getLocation());
         currentUser.setUserId(user.getUserId());
-        currentUser.setRating(common.calculateRating(user.getUserId(),user.getRating()));
+        currentUser.setPhoneNumber(user.getPhoneNumber());
         return userRepository.save(currentUser);
     }
 
@@ -47,10 +47,5 @@ public class UserService {
     public String deleteUser(long Id){
         userRepository.deleteById(Id);
         return "user with Id: "+Id+"has been removed from DB";
-    }
-
-
-    public List<User> createUsers(List<User> userList) {
-        return userRepository.saveAll(userList);
     }
 }

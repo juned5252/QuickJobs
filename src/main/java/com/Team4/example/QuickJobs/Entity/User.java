@@ -1,33 +1,21 @@
 package com.Team4.example.QuickJobs.Entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-@Table(name = "User")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long userId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long userId;
     private String phoneNumber;
     private String firstName;
     private String lastName;
     private String location;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userId", referencedColumnName = "") // need to create value in Job entity to referance here
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
     private List<Job> jobList;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userId", referencedColumnName = "") // need to create value in comment entity to referance here
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
     private List<Comment> commentList;
     private int jobsCompleted;
     private double rating;
@@ -35,11 +23,18 @@ public class User {
     public User() {
     }
 
-    public long getUserId() {
+    public User(String phoneNumber, String firstName, String lastName, String location) {
+        this.phoneNumber = phoneNumber;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.location = location;
+    }
+
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
@@ -75,13 +70,13 @@ public class User {
         this.location = location;
     }
 
-    public List<Job> getJobList() {
-        return jobList;
-    }
-
-    public void setJobList(List<Job> jobList) {
-        this.jobList = jobList;
-    }
+//    public List<Job> getJobList() {
+//        return jobList;
+//    }
+//
+//    public void setJobList(List<Job> jobList) {
+//        this.jobList = jobList;
+//    }
 
     public List<Comment> getCommentList() {
         return commentList;
