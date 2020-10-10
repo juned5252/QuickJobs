@@ -2,7 +2,6 @@ package com.Team4.example.QuickJobs.Entity;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
     @Entity
     public class Job {
