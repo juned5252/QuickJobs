@@ -2,16 +2,15 @@ package com.Team4.example.QuickJobs.Entity;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
     @Entity
     public class Job {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private int jobId;
+        private Long jobId;
         private String description;
-        private double price;
+        private double wage;
         private String location;
         private Date date;
         private String category;
@@ -22,9 +21,9 @@ import java.util.List;
         public Job() {
         }
 
-        public Job(String description, double price, String location, Date date, String category, String status, User user) {
+        public Job(String description, double wage, String location, Date date, String category, String status, User user) {
             this.description = description;
-            this.price = price;
+            this.wage = wage;
             this.location = location;
             this.date = date;
             this.category = category;
@@ -32,11 +31,11 @@ import java.util.List;
             this.user = user;
         }
 
-        public int getJobId() {
+        public Long getJobId() {
             return jobId;
         }
 
-        public void setJobId(int jobId) {
+        public void setJobId(Long jobId) {
             this.jobId = jobId;
         }
 
@@ -48,12 +47,12 @@ import java.util.List;
             this.description = description;
         }
 
-        public double getPrice() {
-            return price;
+        public double getwage() {
+            return wage;
         }
 
-        public void setPrice(double price) {
-            this.price = price;
+        public void setwage(double wage) {
+            this.wage = wage;
         }
 
         public String getLocation() {
