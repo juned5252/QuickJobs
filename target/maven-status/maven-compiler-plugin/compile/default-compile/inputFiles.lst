@@ -1,14 +1,14 @@
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Controller/JobController.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Service/UserService.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Service/JobService.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Entity/Job.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Entity/Comment.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Controller/CommentController.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/QuickJobsApplication.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Repository/UserRepository.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Service/CommentService.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Entity/User.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Utilities/Common.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Controller/UserController.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Repository/JobRepository.java
-/Users/mohammadsharkar/Desktop/webDevelopmentAugust2020/hwAI/juned/QuickJobs/src/main/java/com/Team4/example/QuickJobs/Repository/CommentRepository.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Controller\JobController.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Service\CommentService.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Entity\Comment.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Controller\CommentController.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Entity\Job.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\QuickJobsApplication.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Service\UserService.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Controller\UserController.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Service\JobService.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Utilities\Common.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Repository\UserRepository.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Entity\User.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Repository\CommentRepository.java
+C:\Users\Juned Alam\IdeaProjects\QuickJobs\src\main\java\com\Team4\example\QuickJobs\Repository\JobRepository.java
